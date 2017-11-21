@@ -10,14 +10,14 @@ namespace RockPaperScissors
     {
         //member variables
         public string name;
-
+        public int score = 0;
         //constructor
         public Player()
         {
             
         }
         
-
+    
         //methods 
 
 

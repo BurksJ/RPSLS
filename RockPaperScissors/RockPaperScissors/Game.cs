@@ -10,7 +10,9 @@ namespace RockPaperScissors
     {
         //member varible
         Human player1;
-        Player player2; 
+        Player player2;
+        List<string> options = new List<string>(new string[] { "rock", "paper", "scissors", "lizard", "Spock" });
+
         //constructor
         public Game()
         {
@@ -80,10 +82,13 @@ namespace RockPaperScissors
                 if (player2turn == 2 || player2turn == 3)
                 {
                     Console.WriteLine(player1.name + " wins!");
+                    Console.WriteLine(player2.name + " picked " + options[player2turn]);
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
+                    Console.WriteLine(player2.name + " picked " + options[player2turn]);
+
                 }
             }
             else if (player1turn == 1)
@@ -91,10 +96,14 @@ namespace RockPaperScissors
                 if (player2turn == 0 || player2turn == 4)
                 {
                     Console.WriteLine(player1.name + " wins!");
+                    Console.WriteLine(player2.name + " picked " + options[player2turn]);
+
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
+                    Console.WriteLine(player2.name + " picked " + options[player2turn]);
+
                 }
             }
             else if (player1turn == 2)
@@ -102,10 +111,14 @@ namespace RockPaperScissors
                 if (player2turn == 1 || player2turn == 3)
                 {
                     Console.WriteLine(player1.name + " wins!");
+                    Console.WriteLine(player2.name + " picked " + options[player2turn]);
+
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
+                    Console.WriteLine(player2.name + " picked " + options[player2turn]);
+
                 }
             }
             else if (player1turn == 3)
@@ -113,10 +126,14 @@ namespace RockPaperScissors
                 if (player2turn == 1 || player2turn == 4)
                 {
                     Console.WriteLine(player1.name + " wins!");
+                    Console.WriteLine(player2.name + " picked " + options[player2turn]);
+
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
+                    Console.WriteLine(player2.name + " picked " + options[player2turn]);
+
                 }
             }
             else if (player1turn == 4)
@@ -124,10 +141,14 @@ namespace RockPaperScissors
                 if (player2turn == 0 || player2turn == 2)
                 {
                     Console.WriteLine(player1.name + " wins!");
+                    Console.WriteLine(player2.name + " picked " + options[player2turn]);
+
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
+                    Console.WriteLine(player2.name + " picked " + options[player2turn]);
+
                 }
             }
         }
