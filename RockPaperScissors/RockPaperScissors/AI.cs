@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    class AI
+    public class AI : Player
     {
+        public AI()
+        {
+            name = "Computer";
+        }
+        public override int UserInput()
+        {
+            Random num = new Random();
+            int aiTurn = num.Next(0, 5);
+            return aiTurn;
+        }
     }
 }

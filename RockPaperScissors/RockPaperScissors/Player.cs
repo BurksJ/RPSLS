@@ -6,7 +6,39 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    class Player
+    public class Player
     {
+        //member variables
+        public string name;
+
+        //constructor
+        public Player()
+        {
+            Console.WriteLine("Enter your name!");
+            string name = Console.ReadLine();
+        }
+        
+
+        //methods 
+
+
+       //get choice from user 
+       public virtual int UserInput()
+        {
+            Console.WriteLine(name + " Please enter your weapon");
+            Console.WriteLine("Enter 0 for Rock");
+            Console.WriteLine("Enter 1 for Paper");
+            Console.WriteLine("Enter 2 for Scissors");
+            Console.WriteLine("Enter 3 for Lizard");
+            Console.WriteLine("Enter 4 for Spock\n");
+
+            int weapon = Convert.ToInt32(Console.ReadLine());
+            return weapon;
+        }
+
+        //switch case for weapon options
+
+       //get choice from AI- Random
+       
     }
 }
