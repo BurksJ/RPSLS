@@ -14,8 +14,7 @@ namespace RockPaperScissors
         //constructor
         public Player()
         {
-            Console.WriteLine("Enter your name!");
-            string name = Console.ReadLine();
+            
         }
         
 

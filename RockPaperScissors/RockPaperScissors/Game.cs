@@ -9,13 +9,13 @@ namespace RockPaperScissors
     class Game
     {
         //member varible
-        Player player1;
+        Human player1;
         Player player2; 
         //constructor
         public Game()
         {
             DisplayRules();
-            player1 = new Player();
+            player1 = new Human();
             GameMenu();
         }
 
@@ -54,7 +54,7 @@ namespace RockPaperScissors
                 case "2":
                     //if player enters 2 then start player vs player
                     Console.WriteLine("You entered 2");
-                    player2 = new Player();
+                    player2 = new Human();
                     CompareTurns();
 
                     break;
@@ -67,6 +67,7 @@ namespace RockPaperScissors
 
         public void CompareTurns()
         {
+
             int player1turn = player1.UserInput();
             int player2turn = player2.UserInput();
 
@@ -78,7 +79,7 @@ namespace RockPaperScissors
             {
                 if (player2turn == 2 || player2turn == 3)
                 {
-                    Console.WriteLine("Player 1 wins!");
+                    Console.WriteLine(player1.name + " wins!");
                 }
                 else
                 {
@@ -89,7 +90,7 @@ namespace RockPaperScissors
             {
                 if (player2turn == 0 || player2turn == 4)
                 {
-                    Console.WriteLine("Player 1 wins!");
+                    Console.WriteLine(player1.name + " wins!");
                 }
                 else
                 {
@@ -100,7 +101,7 @@ namespace RockPaperScissors
             {
                 if (player2turn == 1 || player2turn == 3)
                 {
-                    Console.WriteLine("Player 1 wins!");
+                    Console.WriteLine(player1.name + " wins!");
                 }
                 else
                 {
@@ -111,7 +112,7 @@ namespace RockPaperScissors
             {
                 if (player2turn == 1 || player2turn == 4)
                 {
-                    Console.WriteLine("Player 1 wins!");
+                    Console.WriteLine(player1.name + " wins!");
                 }
                 else
                 {
@@ -122,7 +123,7 @@ namespace RockPaperScissors
             {
                 if (player2turn == 0 || player2turn == 2)
                 {
-                    Console.WriteLine("Player 1 wins!");
+                    Console.WriteLine(player1.name + " wins!");
                 }
                 else
                 {
