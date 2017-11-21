@@ -51,14 +51,13 @@ namespace RockPaperScissors
                     /*player enters 1 then start player vs AI*/
                     Console.WriteLine("You entered 1");
                     player2 = new AI();
-                    CompareTurns();
-                break;
+                    Rounds();
+                    break;
                 case "2":
                     //if player enters 2 then start player vs player
                     Console.WriteLine("You entered 2");
                     player2 = new Human();
-                    CompareTurns();
-
+                    Rounds();
                     break;
                 default:
                     Console.WriteLine("Invalid entry, press 1 or 2.\n");
@@ -163,9 +162,18 @@ namespace RockPaperScissors
         }
         public void Rounds()
         {
-            while ()
+            while (player1.score < 2 && player2.score < 2)
             {
+                CompareTurns();
+            }
+            if (player1.score == 2)
+            {
+                Console.WriteLine(player1.name + " Wins the match!");
 
+            }
+            else
+            {
+                Console.WriteLine(player2.name + " Wins! the match");
             }
         }
         
