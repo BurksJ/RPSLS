@@ -83,7 +83,7 @@ namespace RockPaperScissors
                 }
                 else
                 {
-                    Console.WriteLine("Player 2 wins!");
+                    Console.WriteLine(player2.name + " wins!");
                 }
             }
             else if (player1turn == 1)
@@ -94,7 +94,7 @@ namespace RockPaperScissors
                 }
                 else
                 {
-                    Console.WriteLine("Player 2 wins!");
+                    Console.WriteLine(player2.name + " wins!");
                 }
             }
             else if (player1turn == 2)
@@ -105,7 +105,7 @@ namespace RockPaperScissors
                 }
                 else
                 {
-                    Console.WriteLine("Player 2 wins!");
+                    Console.WriteLine(player2.name + " wins!");
                 }
             }
             else if (player1turn == 3)
@@ -116,7 +116,7 @@ namespace RockPaperScissors
                 }
                 else
                 {
-                    Console.WriteLine("Player 2 wins!");
+                    Console.WriteLine(player2.name + " wins!");
                 }
             }
             else if (player1turn == 4)
@@ -127,7 +127,7 @@ namespace RockPaperScissors
                 }
                 else
                 {
-                    Console.WriteLine("Player 2 wins!");
+                    Console.WriteLine(player2.name + " wins!");
                 }
             }
         }
