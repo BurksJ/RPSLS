@@ -83,12 +83,13 @@ namespace RockPaperScissors
                 {
                     Console.WriteLine(player1.name + " wins!");
                     Console.WriteLine(player2.name + " picked " + options[player2turn]);
+                    player1.score++;
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
                     Console.WriteLine(player2.name + " picked " + options[player2turn]);
-
+                    player2.score++;
                 }
             }
             else if (player1turn == 1)
@@ -97,12 +98,14 @@ namespace RockPaperScissors
                 {
                     Console.WriteLine(player1.name + " wins!");
                     Console.WriteLine(player2.name + " picked " + options[player2turn]);
+                    player1.score++;
 
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
                     Console.WriteLine(player2.name + " picked " + options[player2turn]);
+                    player2.score++;
 
                 }
             }
@@ -112,12 +115,14 @@ namespace RockPaperScissors
                 {
                     Console.WriteLine(player1.name + " wins!");
                     Console.WriteLine(player2.name + " picked " + options[player2turn]);
+                    player1.score++;
 
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
                     Console.WriteLine(player2.name + " picked " + options[player2turn]);
+                    player2.score++;
 
                 }
             }
@@ -127,12 +132,14 @@ namespace RockPaperScissors
                 {
                     Console.WriteLine(player1.name + " wins!");
                     Console.WriteLine(player2.name + " picked " + options[player2turn]);
+                    player1.score++;
 
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
                     Console.WriteLine(player2.name + " picked " + options[player2turn]);
+                    player2.score++;
 
                 }
             }
@@ -142,16 +149,25 @@ namespace RockPaperScissors
                 {
                     Console.WriteLine(player1.name + " wins!");
                     Console.WriteLine(player2.name + " picked " + options[player2turn]);
+                    player1.score++;
 
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
                     Console.WriteLine(player2.name + " picked " + options[player2turn]);
+                    player2.score++;
 
                 }
             }
         }
+        public void Rounds()
+        {
+            while ()
+            {
 
+            }
+        }
+        
     }
 }
